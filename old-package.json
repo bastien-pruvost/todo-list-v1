@@ -1,0 +1,29 @@
+{
+  "name": "project-starter",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./styles/scss/:./styles/unprefixed-css/ --style expanded --no-source-map",
+    "prefix": "postcss ./styles/unprefixed-css/ --use autoprefixer -d ./styles/css/ --no-map ",
+    "autoprefix": "onchange \"./styles/unprefixed-css/*.css\" -- npm run prefix",
+    "webpack": "webpack",
+    "start": "webpack serve"
+  },
+  "author": "bastien_dev",
+  "license": "ISC",
+  "browserslist": "defaults",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

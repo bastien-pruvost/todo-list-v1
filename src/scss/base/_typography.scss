@@ -1,0 +1,50 @@
+// Import from Google Fonts
+
+
+// Fonts size responsive rem
+
+html {
+
+  // Base for rem unit
+  // font-size: 62.5%; // 1rem = 10px
+
+  // Wide Screens
+  @media only screen and (min-width: 1921px) {
+      // font-size: 68.75%; // 1rem = 11px
+  }	
+	
+  // Tablet Portrait
+  @media only screen and (max-width: 900px) {
+    // font-size: 56.25%; // 1rem = 9px
+  }
+
+  // Mobile
+  @media only screen and (max-width: 600px) {
+    // font-size: 50%; // 1rem = 8px
+  }
+}
+
+// Fonts
+
+body {
+  font-family: $textFont;
+  font-size: 1.8rem;
+  color: $black;
+}
+
+h1 {
+ font-family: $headingFont;
+ font-size: 3rem;
+ padding-bottom: 3rem;
+ text-align: center;
+ font-weight: 900;
+}
+
+strong {
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.4;
+  color: $greyMedium;
+}
