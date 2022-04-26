@@ -1,17 +1,69 @@
 body {
   @include flex;
   min-height: 100vh;
-  background: #ffefba; /* fallback for old browsers */
-  background: linear-gradient(20deg, #ffffff -5%, #ffeea4 200%);
+  background-image: linear-gradient(
+      90deg,
+      rgba(165, 165, 165, 0.03) 0%,
+      rgba(165, 165, 165, 0.03) 8%,
+      rgba(235, 235, 235, 0.03) 8%,
+      rgba(235, 235, 235, 0.03) 9%,
+      rgba(7, 7, 7, 0.03) 9%,
+      rgba(7, 7, 7, 0.03) 14%,
+      rgba(212, 212, 212, 0.03) 14%,
+      rgba(212, 212, 212, 0.03) 17%,
+      rgba(219, 219, 219, 0.03) 17%,
+      rgba(219, 219, 219, 0.03) 95%,
+      rgba(86, 86, 86, 0.03) 95%,
+      rgba(86, 86, 86, 0.03) 100%
+    ),
+    linear-gradient(
+      67.5deg,
+      rgba(80, 80, 80, 0.03) 0%,
+      rgba(80, 80, 80, 0.03) 11%,
+      rgba(138, 138, 138, 0.03) 11%,
+      rgba(138, 138, 138, 0.03) 17%,
+      rgba(122, 122, 122, 0.03) 17%,
+      rgba(122, 122, 122, 0.03) 24%,
+      rgba(166, 166, 166, 0.03) 24%,
+      rgba(166, 166, 166, 0.03) 27%,
+      rgba(245, 245, 245, 0.03) 27%,
+      rgba(245, 245, 245, 0.03) 89%,
+      rgba(88, 88, 88, 0.03) 89%,
+      rgba(88, 88, 88, 0.03) 100%
+    ),
+    linear-gradient(
+      67.5deg,
+      rgba(244, 244, 244, 0.03) 0%,
+      rgba(244, 244, 244, 0.03) 4%,
+      rgba(16, 16, 16, 0.03) 4%,
+      rgba(16, 16, 16, 0.03) 10%,
+      rgba(157, 157, 157, 0.03) 10%,
+      rgba(157, 157, 157, 0.03) 20%,
+      rgba(212, 212, 212, 0.03) 20%,
+      rgba(212, 212, 212, 0.03) 83%,
+      rgba(5, 5, 5, 0.03) 83%,
+      rgba(5, 5, 5, 0.03) 84%,
+      rgba(237, 237, 237, 0.03) 84%,
+      rgba(237, 237, 237, 0.03) 100%
+    ),
+    linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 .app {
-  min-width: 400px;
+  @include flex(start, stretch, column);
+  position: relative;
+  width: 90%;
+  margin: 15px 0;
+  max-width: 500px;
   min-height: 500px;
   padding: 25px;
   border-radius: 15px;
   background-color: $greyLight;
-  box-shadow: 3px 3px 25px -8px $colorShadow;
+  box-shadow: 2px 2px 25px $colorShadow;
+
+  @media (max-width: 400px) {
+    padding: 25px 15px;
+  }
 }
 
 input {
@@ -24,6 +76,12 @@ input {
   &:focus {
     border: 2px solid $greyMedium;
   }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
 }
 
 i {
@@ -41,23 +99,24 @@ i {
   @include flex;
   height: 25px;
   margin: 30px 0;
-
-  button {
-    border: none;
-    background-color: transparent;
+  & > input {
+    width: 100%;
   }
+}
+
+.todo-list {
+  flex: 1;
 }
 
 .task {
   @include flex(start);
   margin-bottom: 10px;
-  height: 25px;
 
   &__toggle-finish {
     @include flex;
     flex-shrink: 0;
-    height: 25px;
-    width: 25px;
+    height: 24px;
+    width: 24px;
     margin-right: 10px;
     border-radius: 25px;
     border: 1px solid $greyDark;
@@ -70,13 +129,49 @@ i {
     & > i {
       margin: 0;
       font-size: 1rem;
-      color: rgb(38, 94, 38);
+      color: rgb(64, 145, 64);
       display: none;
+    }
+
+    &.finished {
+      border: none;
+      & > i {
+        display: block;
+      }
+      & ~ .task__text {
+        text-decoration: line-through;
+        color: $greyMedium;
+      }
+      & ~ .task__edit-btn {
+        display: none;
+      }
     }
   }
 
   &__text {
-    flex: 1;
+    flex: 1 1;
     user-select: none;
+    overflow-wrap: anywhere;
+  }
+
+  & > form {
+    @include flex;
+    flex: 1;
+  }
+}
+
+.delete-finished-task-btn {
+  align-self: center;
+  left: 50%;
+  width: 100%;
+  max-width: 270px;
+  padding: 8px 16px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px solid $greyMedium;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($greyLight, 3%);
   }
 }

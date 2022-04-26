@@ -22,17 +22,19 @@
 
     <h2>Liste des tâches</h2>
 
-    <form class="todo-add">
-      <input type="text" class="todo-add__text-input">
+    <form action="#" class="todo-add">
+      <input type="text" class="todo-add__text-input" placeholder="Ajouter une tâche">
       <button type="submit"><i class="fa-solid fa-plus"></i></button>
     </form>
 
     <ul class="todo-list">
-
     </ul>
+
+    <button class="delete-finished-task-btn">Supprimer les tâches términés</button>
 
   </div>
 
+  <!-- TASK TEMPLATES FOR JS -->
   <template id="task-template">
     <li class="task">
       <div class="task__toggle-finish"><i class="fa-solid fa-check"></i></div>
@@ -41,13 +43,14 @@
       <i class="task__delete-btn fa-solid fa-trash-can"></i>
     </li>
   </template>
-
   <template id="task-template-edit-mode">
     <li class="task">
       <div class="task__toggle-finish"><i class="fa-solid fa-check"></i></div>
-      <input class="task__input"></input>
-      <i class="task__save-btn fa-solid fa-circle-check"></i>
-      <i class="task__cancel-btn fa-solid fa-arrow-rotate-left"></i>
+      <form action="#" class="save-form">
+        <input class="task__input"></input>
+        <button type="submit" class="task__save-btn"><i class="fa-solid fa-circle-check"></i></button>
+        <i class="task__cancel-btn fa-solid fa-arrow-rotate-left"></i>
+      </form>
     </li>
   </template>
 
