@@ -19,14 +19,14 @@ html {
   text-rendering: optimizeLegibility;
 
   &::-webkit-scrollbar {
-    width: 1rem;
+    width: 15px;
   }
   &::-webkit-scrollbar-track {
     background: $greyLight;
   }
   &::-webkit-scrollbar-thumb {
     background: $greyMedium;
-    border-radius: 0.5rem;
+    border-radius: 50px;
   }
 }
 

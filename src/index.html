@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ToDo List</title>
+  <title>ToDo App</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,27 +28,19 @@
     </form>
 
     <ul class="todo-list">
-      <li class="task">
-        <div class="task__toggle-finished"><i class="fa-solid fa-check"></i></div>
-        <span class="task__text">Faire les comptes</span>
-        <i class="fa-solid fa-pencil"></i>
-        <i class="task__delete-btn fa-solid fa-trash-can"></i>
-      </li>
-      <li class="task">
-        <div class="task__toggle-finished"><i class="fa-solid fa-check"></i></div>
-        <span class="task__text">Etudier JS</span>
-        <i class="fa-solid fa-pencil"></i>
-        <i class="task__delete-btn fa-solid fa-trash-can"></i>
-      </li>
-      <li class="task">
-        <div class="task__toggle-finished"><i class="fa-solid fa-check"></i></div>
-        <span class="task__text">Faire la vaisselle</span>
-        <i class="fa-solid fa-pencil"></i>
-        <i class="task__delete-btn fa-solid fa-trash-can"></i>
-      </li>
+
     </ul>
 
   </div>
+
+  <template id="task-template">
+    <li class="task">
+      <div class="task__toggle-finish"><i class="fa-solid fa-check"></i></div>
+      <span class="task__text"></span>
+      <i class="fa-solid fa-pencil"></i>
+      <i class="task__delete-btn fa-solid fa-trash-can"></i>
+    </li>
+  </template>
 
 </body>
 
