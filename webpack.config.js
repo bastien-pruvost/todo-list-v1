@@ -37,13 +37,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
+      inject: 'body',
     }),
+
     new MiniCssExtractPlugin(),
   ],
   devtool: 'source-map',
   devServer: {
     static: path.join(__dirname, 'public'),
-    magicHtml: true,
+    watchFiles: ['./src/**/*'],
     compress: true,
     open: true,
     port: 4000,

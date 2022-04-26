@@ -1,14 +1,13 @@
 // -- Fonts --
 
 $headingFont: 'Red Hat Display', sans-serif;
-$textFont: 'Red Hat Text', sans-serif;
-
+$textFont: 'Roboto', sans-serif;
 
 // -- Colors --
 
-$white: #FFFFFF;
-$greyLight: #e9e9e9;
-$greyMedium: #505050;
+$white: #ffffff;
+$greyLight: #eeeeee;
+$greyMedium: #797979;
 $greyDark: #252525;
 $black: #000000;
 
@@ -16,37 +15,14 @@ $primaryLight: #ffdb39;
 $primary: #ffc100;
 $primaryDark: rgb(223, 163, 12);
 
-$accentLight: #778DCF;
-$accent: #4261BD;
-$accentDark: #2A3E79;
+$accentLight: #778dcf;
+$accent: #4261bd;
+$accentDark: #2a3e79;
 
-$shadowColor: #85858528;
-
+$colorShadow: rgba(31, 31, 31, 0.247);
 
 // Responsive BreakPoints
 
 $large: 1200px;
 $medium: 900px;
 $small: 600px;
-
-// -- Wrappers Padding X --
-
-$largePaddingX: 4rem;
-$mediumPaddingX: 3rem;
-$smallPaddingX: 2rem;
-
-// -- Wrappers Padding Y --
-
-$headerPaddingY: 1rem;
-
-$wrapperPaddingY: 3rem;
-
-$footerPaddingY: 3rem;
-
-
-// -- Header Height Without Padding --
-
-$headerHeight: 8rem;
-
-
-

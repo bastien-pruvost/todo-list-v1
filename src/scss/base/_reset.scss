@@ -2,7 +2,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   border: none;
   list-style: none;
   text-decoration: none;
@@ -26,16 +27,9 @@ html {
   &::-webkit-scrollbar-thumb {
     background: $greyMedium;
     border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.1rem 0.4rem $shadowColor;
   }
 }
 
 body {
   position: relative;
-}
-
-input {
-  &::-webkit-inner-spin-button {
-    opacity: 1;
-  }
 }
