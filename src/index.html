@@ -37,8 +37,17 @@
     <li class="task">
       <div class="task__toggle-finish"><i class="fa-solid fa-check"></i></div>
       <span class="task__text"></span>
-      <i class="fa-solid fa-pencil"></i>
+      <i class="task__edit-btn fa-solid fa-pencil"></i>
       <i class="task__delete-btn fa-solid fa-trash-can"></i>
+    </li>
+  </template>
+
+  <template id="task-template-edit-mode">
+    <li class="task">
+      <div class="task__toggle-finish"><i class="fa-solid fa-check"></i></div>
+      <input class="task__input"></input>
+      <i class="task__save-btn fa-solid fa-circle-check"></i>
+      <i class="task__cancel-btn fa-solid fa-arrow-rotate-left"></i>
     </li>
   </template>
 

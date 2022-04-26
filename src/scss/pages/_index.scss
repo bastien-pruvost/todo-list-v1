@@ -1,16 +1,29 @@
 body {
   @include flex;
   min-height: 100vh;
-  // width: 100vw;
+  background: #ffefba; /* fallback for old browsers */
+  background: linear-gradient(20deg, #ffffff -5%, #ffeea4 200%);
 }
 
 .app {
   min-width: 400px;
   min-height: 500px;
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: $greyLight;
-  box-shadow: 2px 2px 15px -2px $colorShadow;
+  box-shadow: 3px 3px 25px -8px $colorShadow;
+}
+
+input {
+  flex: 1;
+  height: 25px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid $greyMedium;
+  outline: none;
+  &:focus {
+    border: 2px solid $greyMedium;
+  }
 }
 
 i {
@@ -29,16 +42,6 @@ i {
   height: 25px;
   margin: 30px 0;
 
-  &__text-input {
-    flex: 1;
-    border-radius: 30px;
-    height: 25px;
-    padding: 15px;
-    &:focus {
-      outline: 1px solid $greyMedium;
-    }
-  }
-
   button {
     border: none;
     background-color: transparent;
@@ -52,8 +55,10 @@ i {
 
   &__toggle-finish {
     @include flex;
+    flex-shrink: 0;
     height: 25px;
     width: 25px;
+    margin-right: 10px;
     border-radius: 25px;
     border: 1px solid $greyDark;
     cursor: pointer;
@@ -72,7 +77,6 @@ i {
 
   &__text {
     flex: 1;
-    padding-left: 10px;
     user-select: none;
   }
 }
