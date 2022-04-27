@@ -1,0 +1,15 @@
+{
+  "background_color": "white",
+  "description": "Todo App",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "name": "Todo App",
+  "short_name": "Todo",
+  "start_url": "index.html"
+}
