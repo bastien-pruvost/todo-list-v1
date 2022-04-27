@@ -57,8 +57,8 @@ body {
   margin: 15px 0;
   min-width: 400px;
   min-height: 500px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-radius: 20px;
   background-color: $greyLight;
   box-shadow: 2px 2px 25px $colorShadow;
@@ -71,8 +71,9 @@ body {
 }
 
 input {
-  flex: 1;
+  flex: 1 1;
   height: 25px;
+  min-width: 0;
   padding: 15px;
   border-radius: 30px;
   border: 1px solid $greyMedium;
@@ -160,7 +161,8 @@ i {
 
   & > form {
     @include flex;
-    flex: 1;
+    flex: 1 1;
+    min-width: 0;
   }
 }
 
