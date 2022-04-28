@@ -8,7 +8,7 @@ const newTaskInput = document.querySelector('.todo-add__text-input');
 const deleteFinishedTaskButton = document.querySelector('.delete-finished-task-btn');
 
 const displayTodoList = () => {
-  todoListContainer.innerHTML = '';
+  todoListContainer.innerText = '';
   todoData.map((task, index) => {
     task.editMode ? createTaskElementEditMode(task, index) : createTaskElement(task, index);
   });
