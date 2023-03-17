@@ -5,7 +5,7 @@
 Todo List App v1
 todo-list-v1
 todo-v1.pruvostbastien.fr
-https://todo-v1.pruvostbastien.fr
+https://todo-v1.pruvostbastien.fr/public
 
  -->
 
@@ -14,7 +14,7 @@ https://todo-v1.pruvostbastien.fr
 
 A simple Todo List
 
-[todo-v1.pruvostbastien.fr](https://todo-v1.pruvostbastien.fr)
+[todo-v1.pruvostbastien.fr](https://todo-v1.pruvostbastien.fr/public)
 
 
 ## About the project

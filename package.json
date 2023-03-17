@@ -10,7 +10,7 @@
     "name": "Bastien Pruvost",
     "url": "https://github.com/bastien-pruvost"
   },
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "clean": "rm public/bundle.js",
     "dev": "webpack server --mode development",
