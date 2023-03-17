@@ -1,44 +1,133 @@
+<!-- prettier-ignore-start -->
+
+<!-- Rename all occurences with Cmd + D :
+
+Todo List App v1
+todo-list-v1
+todo-v1.pruvostbastien.fr
+https://todo-v1.pruvostbastien.fr
+
+ -->
+
+
 # Todo List App v1
 
-<a href="https://todo-v1.pruvostbastien.fr/public/" target="_blank"><img src="https://img.shields.io/badge/ctrl_%2B_click_here_to_see_the_website-324050?style=for-the-badge&logo=github&logoColor=white" /></a>
+A simple Todo List
+
+[todo-v1.pruvostbastien.fr](https://todo-v1.pruvostbastien.fr)
+
 
 ## About the project
 
-A simple todo list to practice javascript.  
-The features are: Add tasks, Modify them, Delete them, and set them to 'finished' status.  
-I also used webpack for this project to start practicing on it.  
-  
-I plan to make a second much more complete version that will come in the future. That's why it's called 'v1'.
+A simple todo list to practice vanilla Javascript.
 
-### Built with
+I also used webpack for this project to start practicing on it.
+<br/>
 
-- JavaScript
-- WebPack
+> **Note**  
+> I plan to make a second much more complete version in the future with authentication and database. That's why it's called 'v1'.  
+
+
+## Features
+
+- Add task
+- Edit task
+- Delete task
+- Set task to "finished"
+- Remove all finished tasks
+
+
+## Tech Stack
+
 - Html
 - Sass
+- JavaScript
+- WebPack
 
-## Getting Started
 
-### Clone the repo :
+## Run locally
 
-git clone https://github.com/Dev-BastienPruvost/todo-list-v1.git
+1. Clone the project:
 
-### Install dependencies :
+```bash
+  git clone https://github.com/bastien-pruvost/todo-list-v1.git
+```
 
-npm install
+2. Go to the project directory:
 
-### Create a development build with a live-server :
+```bash
+  cd todo-list-v1
+```
 
-npm start
+3. Install dependencies:
 
-### To create a production build in the '/public' folder:
+```bash
+  pnpm install
+  # or
+  yarn install
+  # or
+  npm install
+```
 
-npm run build
+4. Run the development server:
 
-<!-- #### Running
+```bash
+  pnpm dev
+  # or
+  yarn dev
+  # or
+  npm run dev
+```
 
-node public/index.bundle.js -->
 
-## Credits
+## Build project
 
-Project developed by Dev-BastienPruvost
+To build the project for production usage, run the following command:
+
+```bash
+  pnpm build
+  # or
+  yarn build
+  # or
+  npm run build
+```
+
+It will create a `public` folder with all static files.
+
+
+## Suggestions
+
+If you have any suggestion, feel free to [create an issue](https://github.com/bastien-pruvost/todo-list-v1/issues) with the tag "enhancement"
+
+
+## Report bug / Support
+
+To report a bug or get help [create an issue](https://github.com/bastien-pruvost/todo-list-v1/issues).
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
+
+1. [Fork the project](https://github.com/bastien-pruvost/todo-list-v1/fork)
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Code your feature
+4. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+5. Push to the branch (`git push origin feature/my-feature`)
+6. [Open a pull request](https://github.com/bastien-pruvost/todo-list-v1/compare)
+
+You can also simply open an issue with the tag "enhancement".
+
+Don't forget to give the project a star! Thanks again!
+
+
+## License
+
+Distributed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+See `LICENSE` file for more information.
+
+
+<!-- prettier-ignore-end -->

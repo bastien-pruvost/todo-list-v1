@@ -1,14 +1,19 @@
 {
   "name": "todo-list-v1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "A simple Todo List",
   "keywords": [],
-  "author": "bastien_dev",
-  "license": "ISC",
+  "homepage": "https://github.com/bastien-pruvost/todo-list-v1#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Bastien Pruvost",
+    "url": "https://github.com/bastien-pruvost"
+  },
+  "main": "index.html",
   "scripts": {
     "clean": "rm public/bundle.js",
-    "start": "webpack server --mode development",
+    "dev": "webpack server --mode development",
     "build": "webpack --mode production"
   },
   "devDependencies": {
